@@ -17,9 +17,10 @@ function App() {
                 <Experience/>
                 <Projects/>
                 <Eduction/>
-                <Footer/>
+               
 
             </div>
+            <Footer/>
 
         </div>
     );
