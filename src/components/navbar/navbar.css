@@ -1,0 +1,153 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 140px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ef5327;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav .fa-circle-xmark, .fa-bars {
+    display: none;
+}
+
+.tab-links.act-link::after {
+    width: 50%;
+}
+
+.tab-conts ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-conts ul li span {
+    color: #ef5327;
+    font-size: 14px;
+}
+
+.tab-conts {
+    display: none;
+}
+
+.tab-conts.act-tab {
+    display: block;
+}
+
+.resume {
+    padding-left: 100px;
+}
+
+.btn.btncv {
+    display: inline-block;
+    background: #ef5327;
+}
+
+/**********Responsive section**********/
+
+@media screen and (max-width: 800px) {
+    nav .fa-circle-xmark, .fa-bars {
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    nav ul {
+        background: #1a1443;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-bars, .fa-circle-xmark {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    nav ul.active {
+        right: 0;
+    }
+
+}
+
+.header-section {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(/src/images/heroimage/background-header.jpg);
+    position: relative;
+}
+
+
+.header-text {
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text p {
+    color: #ef5327;
+}
+
+
+.header-btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ef5327;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.5s;
+    position: absolute;
+    margin-top: 2%;
+    font-size: 20px;
+}
+
+.header-btn:hover {
+    background: #ef5327;
+
+}
