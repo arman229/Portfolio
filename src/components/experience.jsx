@@ -73,9 +73,13 @@ function Experience() {
                                                     <p className="text-base sm:text-xl mb-2 font-medium uppercase">
                                                         {experience.title}
                                                     </p>
-                                                    <p className="text-sm sm:text-base">
-                                                        {experience.company}
-                                                    </p>
+                                                    <p className="text-base sm:text-md mb-2 font-medium ">
+                                                        {experience.company}                                                   </p>
+                                                   {experience.description.map((des)=>{
+                                                    return <p className="text-sm sm:text-base">
+                                                    {des}
+                                                </p>
+                                                   })} 
                                                 </div>
                                             </div>
                                         </div>

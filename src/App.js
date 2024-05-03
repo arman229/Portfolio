@@ -5,6 +5,7 @@ import Projects from "./components/projects";
 import Eduction from "./components/education";
 import Navbar from "./components/navbar/navbar";
 import Footer from "./components/footer";
+import MyCertificate from "./components/certificate";
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
             <Navbar/>
             <div className={"container mx-auto"}
             >
+                <MyCertificate/>
                 <AboutSection/>
                 <Skills/>
                 <Experience/>
