@@ -12,7 +12,7 @@ function Footer() {
     <div>
       <footer
         id={"footer"}
-        className="  text-white     bt-black-400"
+        className="  text-white   bg-[#090d1b] bt-black-400"
         style={{ borderTop: "3px solid white" }}
       >
         <div className="container mx-auto px-4 py-8 lg:py-8 ">

@@ -13,11 +13,12 @@ function App() {
             <Navbar/>
             <div className={" px-2 container mx-auto  "}
             >
-                <MyCertificate/>
+           
                 <AboutSection/>
                 <Skills/>
                 <Experience/>
                 <Projects/>
+                <MyCertificate/>
                 <Eduction/>
                
 
