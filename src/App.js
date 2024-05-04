@@ -9,9 +9,9 @@ import MyCertificate from "./components/certificate";
 
 function App() {
     return (
-        <div>
+        <div  className="text-white">
             <Navbar/>
-            <div className={"container mx-auto"}
+            <div className={" px-2 container mx-auto  "}
             >
                 <MyCertificate/>
                 <AboutSection/>

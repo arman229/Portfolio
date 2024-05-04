@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import "./navbar.css";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBars, faCircleXmark} from "@fortawesome/free-solid-svg-icons";
-import {GiCandleFlame} from "react-icons/gi";
+ 
 import armanLogo from "../../images/myimages/arman_logo.png"
 import HeroSection from "../heropage";
 
@@ -15,7 +15,7 @@ function Navbar() {
 
     return (
         <div className="header-section" id="header">
-            <div className="container mx-auto">
+            <div className="container mx-auto px-2">
                 <div className="navbar">
                     <nav>
                         <a href="/" className=" flex text-[#16f2b3] text-3xl font-bold gap-2"
@@ -41,9 +41,9 @@ function Navbar() {
                             <li>
                                 <a href="#education">Education</a>
                             </li>
-                            <FontAwesomeIcon icon={faCircleXmark} onClick={toggleMenu}/>
+                            <FontAwesomeIcon icon={faCircleXmark} className="text-white" onClick={toggleMenu}/>
                         </ul>
-                        <FontAwesomeIcon icon={faBars} onClick={toggleMenu}/>
+                        <FontAwesomeIcon icon={faBars} onClick={toggleMenu} className="text-white" />
                     </nav>
                 </div>
                 <HeroSection/>

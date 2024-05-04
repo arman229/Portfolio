@@ -5,8 +5,9 @@ export const experiences = [
       company: "TechnoSofts",
       duration: "(Sep 2023 - Nov 2023)",
       description: [
-        "React Hooks, functional components expert.",
-        "State manages data, props pass data.",
+        "Enhanced UI and functionality of web apps.",
+        "Designed, and developed intricate websites.",
+       " Gained practical user-facing experience."
          
       ]
     },
@@ -17,8 +18,9 @@ export const experiences = [
       company: "Self Employed",
       duration: "(Jan 2023 - Present)",
       description: [
-        "Designed, and developed intricate websites.",
+      
         "Used HTML, CSS, JS, and React for UI.",
+        "State manages data, props pass data.",
         "Python, FastAPI, Next.js, and Tailwind CSS."
       ]
     }

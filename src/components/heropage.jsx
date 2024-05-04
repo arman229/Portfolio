@@ -60,21 +60,21 @@ function HeroSection() {
                 <div className="my-8 flex items-center gap-5">
                     <a
                         href={'https://github.com/arman229'}
-                        target='_blank'
+                        target='_blank' rel="noreferrer"
                         className="transition-all text-pink-500 hover:scale-125 duration-300"
                     >
                         <BsGithub size={30}/>
                     </a>
                     <a
                         href={'https://www.linkedin.com/in/arman-ashraf-427951219/'}
-                        target='_blank'
+                        target='_blank' rel="noreferrer"
                         className="transition-all text-pink-500 hover:scale-125 duration-300"
                     >
                         <BsLinkedin size={30}/>
                     </a>
                     <a
                         href="mailto:armanashraf015@gmail.com"
-                        target='_blank'
+                        target='_blank' rel="noreferrer"
                         className="transition-all text-pink-500 hover:scale-125 duration-300"
                     >
                         <FaEnvelope size={30}/>
@@ -94,7 +94,7 @@ function HeroSection() {
 
                     <a className="flex items-center gap-1 hover:gap-3 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 px-3 md:px-8 py-3 md:py-4 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold"
                        role="button"
-                       href={pdfLink}
+                       href={pdfLink} rel="noreferrer"
                        target="_blank">
                         <span>Get Resume</span>
                         <MdDownload size={16}/>

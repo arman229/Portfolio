@@ -30,25 +30,6 @@ const certificates = [
   
         image: problemsolvin,
         link: 'https://coursera.org/verify/7N7ZTGRCFA76',
-    }, {
-        title: 'Problem Solving Using Computational  ',
-        issuer: 'coursera',
-  
-        image: problemsolvin,
-        link: 'https://coursera.org/verify/7N7ZTGRCFA76',
-    }, {
-        title: 'Problem Solving Using Computational  ',
-        issuer: 'coursera',
-  
-        image: problemsolvin,
-        link: 'https://coursera.org/verify/7N7ZTGRCFA76',
-    }, {
-        title: 'Problem Solving Using Computational  ',
-        issuer: 'coursera',
-  
-        image: problemsolvin,
-        link: 'https://coursera.org/verify/7N7ZTGRCFA76',
-    },
-  
+    }, 
   ];
   export default certificates 

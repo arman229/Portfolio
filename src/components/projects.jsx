@@ -1,6 +1,7 @@
 import React from "react";
 import DataCard from "../data/projects-data";
-
+import {BsGithub, BsLinkedin} from "react-icons/bs";
+<BsGithub size={30}/>
 function Projects() {
     return (
         <div>
@@ -36,7 +37,7 @@ function Projects() {
 
                                         <p className=" ">{item.detail}</p>
                                         <h5 className="text-lg pt-2 font-bold italic">Tech Used: React, Html, Tailwind css</h5>
-                                        <div className="mt-4 flex justify-between">
+                                        <div className="mt-4 flex  gap-3">
                                             <a href={item.demo} target="_blank" rel="noopener noreferrer"
                                                className="bg-blue-400 hover:bg-blue-500 text-white py-2 px-4 rounded-md">
                                                 Live Demo
@@ -45,13 +46,8 @@ function Projects() {
 
                                             <a href={item.github}>
                                                 <button
-                                                    className="flex items-center px-4 py-2 bg-gray-800 text-white rounded-lg shadow-md">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 mr-2"
-                                                         viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                         stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                        <path
-                                                            d="M9 19c-4.418 0-8-3.582-8-8s3.582-8 8-8c3.534 0 6.465 2.291 7.512 5.469.37 1.077.044 2.28-.731 3.156-.706.865-1.747 1.375-2.781 1.375h-2v4.5c0 .276-.224.5-.5.5h-3c-.276 0-.5-.224-.5-.5v-4.5h-2c-1.034 0-2.075-.51-2.781-1.375-.774-.876-1.101-2.079-.731-3.156 1.047-3.178 3.978-5.469 7.512-5.469 4.418 0 8 3.582 8 8s-3.582 8-8 8z"/>
-                                                    </svg>
+                                                    className="flex items-center px-2 py-2 gap-1 bg-gray-800 text-white rounded-lg shadow-md">
+                                                   <BsGithub size={20}/>
                                                     Source Code
                                                 </button>
                                             </a>
