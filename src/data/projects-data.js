@@ -1,7 +1,7 @@
 import weatherimage from "../images/projects/weather.png"
 import bmiimage from "../images/projects/responsivebmi.png"
-import ecommereceproject from "../images/projects/ecommercepro.png"
-import todoproject from "../images/projects/todoproject.png"
+import ecommereceproject from "../images/projects/newecommerece.png"
+import todoproject from "../images/projects/newtodoproject.png"
 
 const DataCard = [
     {
@@ -20,7 +20,7 @@ const DataCard = [
         image: bmiimage,
         heading: "BMI Calculator",
         detail:
-            "A compilation of my BMI calculator projects exemplifying technical prowess and user-focused development.",
+            "A compilation of my BMI calculator projects exemplifying technical prowess.",
         demo: "https://bmicalculator-arman.netlify.app/",
         github: "https://github.com/arman229/CalculateBMI.git",
         techused:['Reactjs', "CSS","HTML"
@@ -31,10 +31,10 @@ const DataCard = [
         image: ecommereceproject,
         heading: "E-commerce project",
         detail:
-            "Intuitive and visually appealing frontend for your eCommerce store. Enhance user experience.",
+            "Intuitive and visually appealing frontend for your eCommerce store.  ",
         demo: "https://my-shopping-website-assignment.vercel.app/",
         github: "https://github.com/arman229/E_commerce_website",
-        techused:['Nextjs', "shadcn/ui","CSS"
+        techused:['Nextjs', "shadcn ui","CSS"
         ]
     },
     {
@@ -44,7 +44,8 @@ const DataCard = [
         detail:
             "A collection of my web design projects showcasing creativity and expertise.",
         demo: "https://piaicwebtodo.vercel.app/",
-        github: "https://github.com/arman229/ToDoTracker.git",
+        github: "https://github.com/arman229/todoapp.git",
+        
         techused:['Nextjs', "CSS","Typescript"
         ]
     },
