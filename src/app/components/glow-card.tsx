@@ -4,7 +4,7 @@
 
 import { useEffect } from 'react';
 
-const GlowCard = ({ children , identifier}) => {
+const GlowCard = ({ children , identifier}:any) => {
   useEffect(() => {
     const CONTAINER = document.querySelector(`.glow-container-${identifier}`);
     const CARDS = document.querySelectorAll(`.glow-card-${identifier}`);
@@ -18,7 +18,8 @@ const GlowCard = ({ children , identifier}) => {
       opacity: 0,
     };
 
-    const UPDATE = (event) => {
+    const UPDATE = (event:any) => {
+      const CARDS: NodeListOf<HTMLElement> = document.querySelectorAll('.card');
       for (const CARD of CARDS) {
         const CARD_BOUNDS = CARD.getBoundingClientRect();
 
