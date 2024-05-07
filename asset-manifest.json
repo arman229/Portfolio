@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.e1c60b17.css",
+    "main.js": "/portfolio/static/js/main.5308d22d.js",
+    "static/media/arman_cv.pdf": "/portfolio/static/media/arman_cv.5442ccc8b607271f32f6.pdf",
+    "static/media/probsolving.png": "/portfolio/static/media/probsolving.f31b1f79e99de4c5ea64.png",
+    "static/media/gernarativeai.png": "/portfolio/static/media/gernarativeai.3d64791dc9f2be9ea227.png",
+    "static/media/mathforml.png": "/portfolio/static/media/mathforml.cd21adcdf31e382b7867.png",
+    "static/media/pyforeverybody.png": "/portfolio/static/media/pyforeverybody.d29df9e6759ebd15d7df.png",
+    "static/media/metafrontend.png": "/portfolio/static/media/metafrontend.fb9badaaf6133bfa7b47.png",
+    "static/media/newecommerece.png": "/portfolio/static/media/newecommerece.18071bb7fc43c1768457.png",
+    "static/media/newtodoproject.png": "/portfolio/static/media/newtodoproject.9026559881b0b83f2125.png",
+    "static/media/weather.png": "/portfolio/static/media/weather.ac85ce61ecd864b65b1b.png",
+    "static/media/background-header.jpg": "/portfolio/static/media/background-header.35708e91d89ba76f59f2.jpg",
+    "static/media/responsivebmi.png": "/portfolio/static/media/responsivebmi.1a519045cea796785052.png",
+    "static/media/myimage1.jpg": "/portfolio/static/media/myimage1.6803ea3468c7567439a4.jpg",
+    "static/media/arman_logo.png": "/portfolio/static/media/arman_logo.710d862e75e592cd2a0d.png",
+    "static/media/section.svg": "/portfolio/static/media/section.3edbb257193d8fe1eddc2abf997bf840.svg",
+    "static/media/react.svg": "/portfolio/static/media/react.c3a0b34aae466451a91157424eec1ee3.svg",
+    "static/media/docker.svg": "/portfolio/static/media/docker.26ada6e465df47e1423793e7e41f43ba.svg",
+    "static/media/fastapi.svg": "/portfolio/static/media/fastapi.3d4e9b4f3015c0e5ba44d69089d45fe0.svg",
+    "static/media/nextJS.svg": "/portfolio/static/media/nextJS.330fb71cbedf3482d2a778c44724ab71.svg",
+    "static/media/python.svg": "/portfolio/static/media/python.0934792163d56e233fb5f42cc69d7ed1.svg",
+    "static/media/typescript.svg": "/portfolio/static/media/typescript.f66836b8961d019a6f633b3c89b0c2ad.svg",
+    "static/media/bootstrap.svg": "/portfolio/static/media/bootstrap.3b3ab2cfe7cdf9d8eb417ce32f573b04.svg",
+    "static/media/Nodejs.svg": "/portfolio/static/media/Nodejs.10c9e2aa0ca7edf36fceae25fec038a1.svg",
+    "static/media/git.svg": "/portfolio/static/media/git.2d7df16e58dae6c26bba033ee2e8c4d8.svg",
+    "static/media/javascript.svg": "/portfolio/static/media/javascript.f84ec7103324dc7e616d00ed43ecd531.svg",
+    "static/media/tailwind.svg": "/portfolio/static/media/tailwind.01daca9bb655244e125004ccd8d68e66.svg",
+    "static/media/css.svg": "/portfolio/static/media/css.afb434f6d712d3e4ff53be8da4d9876a.svg",
+    "static/media/html.svg": "/portfolio/static/media/html.75bdf0b057c088503944680032ea6347.svg",
+    "static/media/markdown.svg": "/portfolio/static/media/markdown.6fca45ee7d4fb4531c64132bcc3c13b3.svg",
+    "static/media/blur-23.svg": "/portfolio/static/media/blur-23.34fb3256a15748e5cc157c97619764ad.svg",
+    "static/media/materialui.svg": "/portfolio/static/media/materialui.d7f5c38f45cba4d9717da569bf6996ee.svg",
+    "index.html": "/portfolio/index.html",
+    "main.e1c60b17.css.map": "/portfolio/static/css/main.e1c60b17.css.map",
+    "main.5308d22d.js.map": "/portfolio/static/js/main.5308d22d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e1c60b17.css",
+    "static/js/main.5308d22d.js"
+  ]
+}
