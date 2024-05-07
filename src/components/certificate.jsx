@@ -5,9 +5,6 @@ import certificates from "../data/certificate";
 import "swiper/css";
 import "swiper/css/pagination";
 export default function MyCertificate() {
-  
-  
-
   const paperStyle = {
     padding: "8px",
     boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
@@ -39,14 +36,16 @@ export default function MyCertificate() {
       <Swiper
         spaceBetween={20}
         freeMode={true}
-      
         navigation={true}
         autoplay={{ delay: 2500, disableOnInteraction: false }}
-        modules={[Autoplay, FreeMode,Pagination,   Navigation]}
-        pagination={{ clickable: true,  className:'text-red-900, text-blue-200 my-4'  }}
+        modules={[Autoplay, FreeMode, Pagination, Navigation]}
+        pagination={{
+          clickable: true,
+          className: "text-red-900, text-blue-200 my-4",
+        }}
         className={"flex justify-center"}
         breakpoints={{
-           1500: { slidesPerView: 3 },
+          1500: { slidesPerView: 3 },
           700: { slidesPerView: 2 },
           // 500: { slidesPerView: 2 },
           400: { slidesPerView: 1 },
@@ -56,15 +55,27 @@ export default function MyCertificate() {
           <div>
             <SwiperSlide key={index} className="">
               <div style={paperStyle}>
-                <img className=' transition-all duration-1000   hover:scale-110 cursor-pointer'
+                <img
+                  className=" transition-all duration-1000   hover:scale-110 cursor-pointer"
                   src={certificate.image}
                   alt={certificate.title}
                   style={{ maxWidth: "100%" }}
                 />
-                <h1 className="text-lg sm:text-xl font-bold my-2 text-center">{certificate.title}</h1>
-<h2 className="text-lg font-semibold mb-2 text-center">Issued by {certificate.issuer}</h2>
-<div className="flex justify-center"><a href={certificate.link} target="_blank"   className="text-center  inline pb-5  text-blue-500 hover:underline block cursor-pointer">View Certificate</a>
-</div>
+                <h1 className="text-lg sm:text-xl font-bold my-2 text-center">
+                  {certificate.title}
+                </h1>
+                <h2 className="text-lg font-semibold mb-2 text-center">
+                  Issued by {certificate.issuer}
+                </h2>
+                <div className="flex justify-center">
+                  <a
+                    href={certificate.link}
+                    target="_blank"
+                    className="text-center  inline pb-5  text-blue-500 hover:underline block cursor-pointer"
+                  >
+                    View Certificate
+                  </a>
+                </div>
               </div>
             </SwiperSlide>
           </div>
