@@ -6,28 +6,6 @@ import todoproject from "../images/projects/newtodoproject.png"
 const DataCard = [
     {
         id: "0",
-        image: weatherimage,
-        heading: "Weather Web App",
-        detail:
-            "A compilation of my weather web app projects exemplifying innovation and skill.",
-        demo: "https://weatherinfo24.netlify.app/",
-        github: "https://github.com/arman229/Weather-app",
-        techused:['Reactjs', "CSS","Material UI"
-        ]
-    },
-    {
-        id: "1",
-        image: bmiimage,
-        heading: "BMI Calculator",
-        detail:
-            "A compilation of my BMI calculator projects exemplifying technical prowess.",
-        demo: "https://bmicalculator-arman.netlify.app/",
-        github: "https://github.com/arman229/CalculateBMI.git",
-        techused:['Reactjs', "CSS","HTML"
-        ]
-    },
-    {
-        id: "2",
         image: ecommereceproject,
         heading: "E-commerce project",
         detail:
@@ -38,7 +16,7 @@ const DataCard = [
         ]
     },
     {
-        id: "3",
+        id: "1",
         image: todoproject,
         heading: "To Do App",
         detail:
@@ -48,7 +26,29 @@ const DataCard = [
         
         techused:['Nextjs', "CSS","Typescript"
         ]
+    }, {
+        id: "2",
+        image: weatherimage,
+        heading: "Weather Web App",
+        detail:
+            "A compilation of my weather web app projects exemplifying innovation and skill.",
+        demo: "https://weatherinfo24.netlify.app/",
+        github: "https://github.com/arman229/Weather-app",
+        techused:['Reactjs', "CSS","Material UI"
+        ]
     },
+    {
+        id: "3",
+        image: bmiimage,
+        heading: "BMI Calculator",
+        detail:
+            "A compilation of my BMI calculator projects exemplifying technical prowess.",
+        demo: "https://bmicalculator-arman.netlify.app/",
+        github: "https://github.com/arman229/CalculateBMI.git",
+        techused:['Reactjs', "CSS","HTML"
+        ]
+    },
+ 
 ];
 
 export default DataCard;

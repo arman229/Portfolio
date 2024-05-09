@@ -1,12 +1,12 @@
-'use client'
+"use client";
 import React, { useState } from "react";
 import "./navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 
 import Image from "next/image";
-// import armanLogo from "images/myimages/arman_logo.png";
-import armanLogo from "@/app/images/myimages/arman_logo.png"
+// import armanLogo from "/images/myimages/arman_logo.png";
+// import armanLogo from "@/app/images/myimages/arman_logo.png"
 
 import HeroSection from "@/app/components/heropage";
 
@@ -27,7 +27,13 @@ function Navbar() {
               className=" flex text-[#16f2b3] text-3xl font-bold gap-2"
               style={{ fontSize: "1.9rem", cursor: "pointer" }}
             >
-              <Image src={armanLogo} width={200} alt="not shown" className={"p-2"} />
+              <Image
+                src="/images/myimages/arman_logo.png"
+                width={200}
+                height={200}
+                alt="not shown"
+                className={"p-2"}
+              />
             </a>
 
             <ul className={menuOpen ? "active" : ""}>

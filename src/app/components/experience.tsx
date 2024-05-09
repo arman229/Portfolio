@@ -3,7 +3,7 @@ import { BsPersonWorkspace } from "react-icons/bs";
 import lottieFile from "@/app/lottie/code.json";
 import Lottie from "lottie-react";
 import { experiences } from "@/app/data/experience";
-import GlowCard from "@/app/components/glow-card";
+// import GlowCard from "@/app/components/glow-card";
  
 import sectionIcon from "@/app/images/experience/section.svg";
 import blurIcon from "@/app/images/experience/blur-23.svg";
@@ -52,9 +52,10 @@ function Experience() {
           <div>
             <div className="flex flex-col gap-6">
               {experiences.map((experience) => (
-                <GlowCard
+                <div
                   key={experience.id}
-                  identifier={`experience-${experience.id}`}
+               
+                  className="border border-[#2a2e5a] "
                 >
                   <div className="p-3 relative">
                     <Image
@@ -86,7 +87,7 @@ function Experience() {
                       </div>
                     </div>
                   </div>
-                </GlowCard>
+                </div>
               ))}
             </div>
           </div>
