@@ -38,19 +38,19 @@ function Navbar() {
 
             <ul className={menuOpen ? "active" : ""}>
               <li>
-                <a href="#about">About</a>
+                <a href="#about" onClick={toggleMenu}>About</a>
               </li>
               <li>
-                <a href="#skills">Skills</a>
+                <a href="#skills" onClick={toggleMenu}>Skills</a>
               </li>
               <li>
-                <a href="#experience">Experience</a>
+                <a href="#experience" onClick={toggleMenu}>Experience</a>
               </li>
               <li>
-                <a href="#projects">Projects</a>
+                <a href="#projects" onClick={toggleMenu}>Projects</a>
               </li>
               <li>
-                <a href="#education">Education</a>
+                <a href="#education" onClick={toggleMenu}>Education</a>
               </li>
               <FontAwesomeIcon
                 icon={faCircleXmark}
