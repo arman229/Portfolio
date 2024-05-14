@@ -15,15 +15,14 @@ function AboutSection() {
             Who I am?
           </p>
           <p className="text-gray-200 text-sm lg:text-lg">
-            A skilled web developer with expertise in HTML, CSS, JavaScript,
-            React, and a focus on usability and design. Proficient in managing
-            cross-functional teams, utilizing jQuery, Bootstrap, Material UI,
-            and GitHub for version control, and integrating Python FastAPI.
-            Passionate about continuous learning and staying updated with
-            emerging technologies. Excited about Docker containerization for
-            efficient deployment and scaling, leveraging its technology to
-            create lightweight, portable, and self-sufficient containers for
-            seamless deployment across various environments.{" "}
+         A skilled web developer proficient in HTML, CSS, JavaScript,
+ and React, with a focus on usability and design. Utilizes jQuery, 
+ Bootstrap, Material UI, and GitHub for version control. Capable 
+ of developing APIs in Python using the FastAPI framework.
+  Passionate about continuous learning and staying updated with emerging technologies.
+   Excited about containerization for efficient deployment and scaling, leveraging Docker&apos;s 
+   technology to create lightweight, portable, and self-sufficient containers
+    for seamless deployment across various environments.{" "}
           </p>
         </div>
         <div className="flex justify-center order-1 lg:order-2">
@@ -32,7 +31,7 @@ function AboutSection() {
             width={280}
             height={280}
             alt="Arman"
-            className="rounded-lg transition-all duration-1000 grayscale hover:grayscale-0 hover:scale-110 cursor-pointer"
+            className="rounded-lg transition-all duration-1000 grayscale  hover:scale-110 cursor-pointer"
           />
         </div>
       </div>

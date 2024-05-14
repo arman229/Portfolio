@@ -4,9 +4,7 @@ import lottieFile from "@/app/lottie/code.json";
 import Lottie from "lottie-react";
 import { experiences } from "@/app/data/experience";
 // import GlowCard from "@/app/components/glow-card";
- 
-import sectionIcon from "@/app/images/experience/section.svg";
-import blurIcon from "@/app/images/experience/blur-23.svg";
+  
 import Image from "next/image"
 
 function Experience() {
@@ -21,10 +19,10 @@ function Experience() {
   return (
     <div
       id="experience"
-      className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]"
+      className="rel ative z-50 border-t my-12 lg:my-24 border-[#25213b]"
     >
       <Image
-        src={sectionIcon}
+        src={"/images/experience/section.svg"}
         alt="Hero"
         width={1572}
         height={795}
@@ -59,7 +57,7 @@ function Experience() {
                 >
                   <div className="p-3 relative">
                     <Image
-                      src={blurIcon}
+                      src={"/images/experience/blur-23.svg"}
                       alt="Hero"
                       width={1080}
                       height={200}

@@ -8,7 +8,7 @@ function Projects() {
     <div>
       <div
         id="projects"
-        className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]"
+        className="rela tive z-50 border-t my-12 lg:my-24 border-[#25213b]"
       >
         <div className="flex justify-center my-5 lg:py-8">
           <div className="flex  items-center">

@@ -17,68 +17,62 @@ import typescriptIcon from "../images/skills/typescript.svg"
 export const skillsData = [
     {
         name: 'HTML',
-        image: htmlIcon
+        image: "/images/skills/html.svg"
     },
     {
         name: 'CSS',
-        image: cssIcon
+        image: "/images/skills/css.svg"
     },
     {
         name: 'JavaScript',
-        image: javascriptIcon
+        image: "/images/skills/javascript.svg"
     },
     {
         name: 'React',
-        image: reactIcon
+        image: "/images/skills/react.svg"
     },
     {
         name: 'Next.js',
-        image: nextJSIcon
+        image: "/images/skills/nextJS.svg"
     },
-
     {
         name: 'Node.js',
-        image: NodeIcon
+        image: "/images/skills/Nodejs.svg"
     },
-
     {
         name: 'FastApi',
-        image: fastapiIcon
+        image: "/images/skills/fastapi.svg"
     },
     {
         name: 'Bootstrap',
-        image: bootstrapIcon
+        image: "/images/skills/bootstrap.svg"
     },
     {
         name: 'Tailwind ',
-        image: tailwindIcon
+        image: "/images/skills/tailwind.svg"
     },
     {
         name: 'Material UI',
-        image: materialuiIcon
+        image: "/images/skills/materialui.svg"
     },
     {
         name: 'Git',
-        image: gitIcon
+        image: "/images/skills/git.svg"
     },
     {
         name: 'Docker',
-        image: dockerIcon
+        image: "/images/skills/docker.svg"
     },
     {
         name: 'Python',
-        image: pythonIcon
+        image: "/images/skills/python.svg"
     },
-
     {
         name: 'Markdown',
-        image: markdownIcon
+        image: "/images/skills/markdown.svg"
     },
-
     {
         name: 'TypeScript',
-        image: typescriptIcon
+        image: "/images/skills/typescript.svg"
     },
 ];
-
-
