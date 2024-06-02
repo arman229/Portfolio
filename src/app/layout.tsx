@@ -23,7 +23,6 @@ export default function RootLayout({
         <div className="text-white">
           <Navbar />
           {children}
-
           <Footer />
         </div>
       </body>

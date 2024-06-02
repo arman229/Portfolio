@@ -4,6 +4,9 @@ export const experiences = [
       title: 'Front End Developer intern',
       company: "TechnoSofts",
       duration: "(Sep 2023 - Nov 2023)",
+
+
+
       description: [
         "Enhanced UI and functionality of web apps.",
         "Designed, and developed intricate websites.",
@@ -14,6 +17,10 @@ export const experiences = [
   
     {
       id: 2,
+
+
+
+
       title: "Full stack developer",
       company: "Self Employed",
       duration: "(Jan 2023 - Present)",
@@ -23,5 +30,5 @@ export const experiences = [
         "State manages data, props pass data.",
         "Python, FastAPI, Next.js, and Tailwind CSS."
       ]
-    }
+    },
   ]

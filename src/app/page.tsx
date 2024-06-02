@@ -11,10 +11,13 @@ export default function Home() {
     <div className={" px-2 container mx-auto  "}
             >
            
-                <AboutSection/>
+    <AboutSection/>
                 <Skills/>
+    
+    
              <Experience/>
                    <Projects/>
+    
                    <MyCertificate/>
                  <Eduction/>
                
