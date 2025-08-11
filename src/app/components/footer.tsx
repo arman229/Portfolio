@@ -64,7 +64,7 @@ function Footer() {
               <div className="py-1 flex items-center ">
                 <Link
                   className="flex items-center "
-                  href="https://www.linkedin.com/in/arman-ashraf-427951219"
+                  href="https://www.linkedin.com/in/arman-agentic-ai/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

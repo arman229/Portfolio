@@ -30,11 +30,20 @@ function Projects() {
                     className="bg-[#161a2f] rounded-lg shadow-md  "
                     style={{ borderRadius: "15px" }}
                   >
-                    <Image
+                    {/* <Image
                       src={item.image}
                       alt="not shows"
                       className="rounded-t-lg w-full h-full object-cover"
-                    />
+                    /> */}
+
+<div className="relative w-full h-96 rounded-t-lg overflow-hidden">
+  <Image
+    src={item.image}
+    alt={'not shows'}
+    
+    className="object-cover"
+  />
+</div>
 
                     <div className="p-4">
                       <h3 className="  text-base sm:text-xl mb-2 font-medium ">

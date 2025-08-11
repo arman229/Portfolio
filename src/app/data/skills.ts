@@ -14,6 +14,13 @@ import pythonIcon from "../images/skills/python.svg"
 import markdownIcon from "../images/skills/markdown.svg"
 import typescriptIcon from "../images/skills/typescript.svg"
 
+
+
+
+  
+
+  
+
 export const skillsData = [
     {
         name: 'HTML',
@@ -75,4 +82,17 @@ export const skillsData = [
         name: 'TypeScript',
         image: "/images/skills/typescript.svg"
     },
+    {
+        name: 'RAG Specialist',
+        image: "/images/skills/rag.svg"
+    },
+    {
+        name: 'Agentic AI',
+        image: "/images/skills/agent.svg"
+    },
+    {
+        name: 'Artificial Intelligence',
+        image: "/images/skills/ai.svg"
+    }
+  
 ];

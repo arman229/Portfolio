@@ -1,56 +1,69 @@
-# Arman Ashraf - Software Developer
+ 
+# 🚀 Arman Muhammad Ashraf
 
-Welcome to my GitHub profile! I'm Arman Ashraf, a passionate software developer with expertise in frontend and backend technologies. This repository serves as my portfolio, showcasing some of my projects, skills, and interests.
+### Backend AI Engineer | Agentic AI Specialist | Autonomous Systems Architect  
 
-## About Me
+---
 
-I am a dedicated and detail-oriented software developer with a strong foundation in Mathematics and programming principles. My goal is to leverage my skills and experience to create high-quality software solutions that solve real-world problems and deliver value to users.
+## 👋 About Me  
+I am a **Backend AI Engineer** with a solid background in mathematics and extensive experience building **scalable APIs, AI-powered agents, and retrieval-augmented systems**.  
 
-## Portfolio
+I specialize in **Python**, **FastAPI**, **OpenAI Agents SDK**, **CLIP-based visual search**, and **asynchronous architectures** — delivering production-grade solutions that merge AI creativity with engineering precision.  
 
-### Projects
+💡 Passionate about crafting **autonomous platforms** that turn ideas into intelligent, real-world products.
 
-Here are some highlights of my projects:
+---
 
-- **[Project 1](https://my-shopping-website-assignment.vercel.app/)**: Intuitive and visually appealing frontend for your eCommerce store..
-- **[Project 2](https://weatherinfo24.netlify.app/)**: A compilation of my weather web app projects exemplifying innovation and skill..
-- **[Project 3](https://piaicwebtodo.vercel.app/)**:A collection of my web design projects showcasing creativity and expertise..
-- **[Project 4](https://bmicalculator-arman.netlify.app/)**:A compilation of my BMI calculator projects exemplifying technical prowess..
+## 🏆 Featured Projects  
 
-### Skills
+### **[ArmansStore — AI-Powered E-Commerce](https://armanstore.vercel.app/)**
+🔹 Developed backend APIs (FastAPI) for product catalog, cart, checkout, and order tracking.  
+🔹 Built secure authentication & authorization workflows.  
+🔹 Integrated **AI Chatbot** with RAG + CLIP & Pinecone visual search.  
+🔹 CI/CD pipeline with Docker, deployed to **Vercel** & **Hugging Face Spaces**.  
+**Tech:** FastAPI, Python, Next.js, Tailwind, Docker, CLIP, Pinecone, SQLModel  
 
-<div style="display: flex; align-items: center; flex-wrap: wrap; gap:25px; margin-bottom:20px, ">
-  <img src="public/images/skills/javascript.svg" alt="JavaScript Icon" style="width: 70px; height: 50px; margin-right: 8px;">
-  <img src="public/images/skills/python.svg" alt="Python Icon" style="width: 70px; height: 50px; margin-right: 8px;">
-  <img src="public/images/skills/typescript.svg" alt="TypeScript Icon" style="width: 70px; height: 50px; margin-right: 8px;">
-  <img src="public/images/skills/html.svg" alt="HTML Icon" style="width: 70px; height: 50px; margin-right: 8px;">
-  <img src="public/images/skills/css.svg" alt="CSS Icon" style="width: 70px; height: 50px; margin-right: 8px;">
-  <img src="public/images/skills/react.svg" alt="React Icon" style="width: 70px; height: 50px; margin-right: 8px;">
-  <img src="public/images/skills/nextJS.svg" alt="Next.js Icon" style="width: 70px; height: 50px; margin-right: 8px;">
-  <img src="public/images/skills/bootstrap.svg" alt="Bootstrap Icon" style="width: 70px; height: 50px; margin-right: 8px;">
-  <img src="public/images/skills/tailwind.svg" alt="Tailwind CSS Icon" style="width: 70px; height: 50px; margin-right: 8px;">
-  <img src="public/images/skills/materialui.svg" alt="Material UI Icon" style="width: 70px; height: 50px; margin-right: 8px;">
-  <img src="public/images/skills/Nodejs.svg" alt="Node.js Icon" style="width: 70px; height: 50px; margin-right: 8px;">
-  <img src="public/images/skills/fastapi.svg" alt="FastApi Icon" style="width: 70px; height: 50px; margin-right: 8px;">
-  <img src="public/images/skills/git.svg" alt="Git Icon" style="width: 70px; height: 50px; margin-right: 8px;">
-  <img src="public/images/skills/docker.svg" alt="Docker Icon" style="width: 70px; height: 50px; margin-right: 8px;">
-  <img src="public/images/skills/markdown.svg" alt="Markdown Icon" style="width: 70px; height: 50px; margin-right: 8px;">
-</div>
+---
 
-### Interests
+### **[SnuggleFable — Agentic AI Video Generator](https://snugglefable.vercel.app/)**  
+🎬 Transforms a **story theme into ready-to-publish YouTube Shorts**.  
+🔹 Modular multi-agent pipeline: Story Agent, Image Prompt Agent, Sound Design Agent, Voice Module, Final Composer.  
+🔹 Asynchronous execution for TTS, image generation, and video composition.  
+**Tech:** Python, FastAPI, OpenAI Agents SDK, Docker, TTS, MoviePy, ffmpeg, Next.js  
 
-In addition to software development, I am also interested in:
+---
 
-- Open-source contributions
-- Continuous learning and professional development
-- Exploring new technologies and frameworks
+### **[E-Commerce Frontend](https://my-shopping-website-assignment.vercel.app/)**  
+A visually appealing, responsive eCommerce frontend with intuitive UI/UX.  
 
-## Contact
+---
 
-- **Email**: [armanashraf015@gmail.com](mailto:armanashraf015@gmail.com)
-- **LinkedIn**: [Arman Ashraf](https://www.linkedin.com/in/arman-ashraf-427951219/)
-- **GitHub**: [arman229](https://github.com/arman229)
-- **Portfolio**: [portfolio](https://armanashrafportfolio.vercel.app/)
-- **CV**: <a href="public/files/arman_cv.pdf" download>Get Resume</a>
+### **[Weather Web App](https://weatherinfo24.netlify.app/)**  
+A collection of weather web app projects showcasing creativity and technical skills.  
 
-Feel free to reach out to me via email or connect with me on LinkedIn. I'm always open to new opportunities, collaborations, and discussions.
+---
+
+## 💻 Skills  
+
+| **Category**       | **Skills** |
+|--------------------|------------|
+| **Languages**      | Python |
+| **Frameworks**     | FastAPI, Next.js, React, TailwindCSS |
+| **AI & ML**        | OpenAI Agents SDK, RAG, CLIP, Pinecone, TTS, AI Image Generation |
+| **Tools**          | Docker, Git, SQLModel, Pydantic |
+| **Other**          | Asynchronous Architectures, API Design, CI/CD |
+
+---
+
+## 📬 Connect with Me  
+
+📧 **Email:** [armanashraf015@gmail.com](mailto:armanashraf015@gmail.com)  
+💼 **LinkedIn:** [Arman Ashraf](https://www.linkedin.com/in/arman-agentic-ai/)  
+💻 **GitHub:** [arman229](https://github.com/arman229)  
+🌐 **Portfolio:** [Visit Portfolio](https://armanashrafportfolio.vercel.app/)  
+📄 **Resume:** [Download PDF](public/files/arman_updated_cv.pdf)  
+ 
+---
+
+⚡ *Always open to opportunities in Backend API Development, AI Engineering, and Agentic AI Systems.*
+

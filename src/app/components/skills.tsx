@@ -37,8 +37,9 @@ function Skills() {
                     play={true}
                     direction="left"
                 >
-                    {skillsData.map((skill, id) => (
-                        <div
+                    {skillsData.map((skill, id) => {
+                        console.log(id, skill.name, skill.image);
+                       return <div
                             className="w-36 min-w-fit h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 sm:m-5 rounded-lg group relative hover:scale-[1.15] cursor-pointer"
                             key={id}
                         >
@@ -59,12 +60,13 @@ function Skills() {
                                             height={40}
                                             className="h-full w-auto rounded-lg"
                                         />
+                                     
                                     </div>
                                     <p className="text-white text-sm sm:text-lg">{skill.name}</p>
                                 </div>
                             </div>
                         </div>
-                    ))}
+})}
                 </Marquee>
             </div>
         </div>

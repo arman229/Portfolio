@@ -20,19 +20,19 @@ function HeroSection() {
     const interval = setInterval(() => {
       if (typewriterRef.current) {
         typewriterRef.current
-          .typeString("Frontend Developer.")
-          .pauseFor(1000)
-          .deleteAll()
-          .typeString("Backend Developer.")
-          .pauseFor(1000)
-          .deleteAll()
-          .typeString("Nextjs Developer.")
-          .pauseFor(1000)
-          .deleteAll()
-          .typeString("Fastapi Developer.")
+          .typeString("Agentic AI Builder.")
           .pauseFor(1000)
           .deleteAll()
           .typeString("Python Developer.")
+          .pauseFor(1000)
+          .deleteAll()
+          .typeString("RAG Specialist.")
+          .pauseFor(1000)
+          .deleteAll()
+          .typeString("Fastapi Specialist.")
+          .pauseFor(1000)
+          .deleteAll()
+          .typeString("AI-Powered Product Builder")
           .pauseFor(1000)
           .deleteAll()
           .start();
@@ -72,7 +72,7 @@ function HeroSection() {
             <BsGithub size={30} />
           </Link>
           <Link
-            href={"https://www.linkedin.com/in/arman-ashraf-427951219/"}
+            href={"https://www.linkedin.com/in/arman-agentic-ai/"}
             target="_blank"
             rel="noreferrer"
             className="transition-all text-pink-500 hover:scale-125 duration-300"
@@ -102,7 +102,7 @@ function HeroSection() {
           <a
             className="flex items-center gap-1 hover:gap-3 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 px-3 md:px-8 py-3 md:py-4 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold"
             role="button"
-            href={"/files/arman_cv.pdf"}
+            href={"/files/arman_updated_cv.pdf"}
             //    href={'/'}
             rel="noreferrer"
             target="_blank"

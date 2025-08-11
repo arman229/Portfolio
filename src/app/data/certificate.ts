@@ -36,3 +36,43 @@ const certificates = [
     }, 
   ];
   export default certificates 
+
+
+
+
+
+
+   
+// const certificates = [
+//     {
+//         title: 'Meta Front-End Developer',
+//         issuer: 'coursera',
+//         image: '/images/mycertificate/metafrontend.png',
+//         link: 'https://www.coursera.org/account/accomplishments/professional-cert/WGYV6H7JU6R2',
+//     },
+//     {
+//         title: 'Python for Everybody',
+//         issuer: 'coursera',
+//         image: '/images/mycertificate/pyforeverybody.png',
+//         link: 'https://www.coursera.org/account/accomplishments/verify/DGR6855NSVRS',
+//     },
+//     {
+//         title: 'Generative AI for Everyone',
+//         issuer: 'coursera',
+//         image: '/images/mycertificate/gernarativeai.png',
+//         link: 'https://www.coursera.org/account/accomplishments/verify/JSABU3F2YMPH',
+//     },
+//     {
+//         title: 'Problem Solving Using Computational  ',
+//         issuer: 'coursera',
+//         image: '/images/mycertificate/probsolving.png',
+//         link: 'https://www.coursera.org/account/accomplishments/verify/7N7ZTGRCFA76',
+//     }, 
+//     {
+//         title: 'Mathematics for Machine Learning  ',
+//         issuer: 'coursera',
+//         image: '/images/mycertificate/mathforml.png',
+//         link: 'https://www.coursera.org/account/accomplishments/verify/7YG4B8TSJ8U5',
+//     }, 
+//   ];
+//   export default certificates 
