@@ -44,7 +44,7 @@ function Navbar() {
 
 
   return (
-    <div className="header-section" id="header">
+    <div className="header-section md:px-8" id="header">
       <div className="container mx-auto px-2" ref={navbarRef}>
         <div className="navbar">
           <nav>

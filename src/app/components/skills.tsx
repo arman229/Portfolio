@@ -6,7 +6,7 @@ function Skills() {
     return (
         <div
             id="skills"
-            className="rel ative z-50 border-t my-12 lg:my-24 border-[#25213b]"
+            className="rel ative z-50 border-t my-12 lg:my-24 border-[#25213b] md:px-8"
         >
             <div
                 className="w-[100px] h-[100px] bg-violet-100 rounded-full absolute top-6 left-[42%] translate-x-1/2 filter blur-3xl  opacity-20"></div>
@@ -37,8 +37,7 @@ function Skills() {
                     play={true}
                     direction="left"
                 >
-                    {skillsData.map((skill, id) => {
-                        console.log(id, skill.name, skill.image);
+                    {skillsData.map((skill, id) => { 
                        return <div
                             className="w-36 min-w-fit h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 sm:m-5 rounded-lg group relative hover:scale-[1.15] cursor-pointer"
                             key={id}

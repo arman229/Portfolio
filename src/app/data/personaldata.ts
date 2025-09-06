@@ -2,6 +2,6 @@
 
 export const personalData = {
     name: "Arman",
-    profile: "/arman.png",
+    profile: "/images/myimages/arman.jpg",
    
 }

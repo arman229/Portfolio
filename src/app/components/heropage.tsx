@@ -45,7 +45,7 @@ function HeroSection() {
   }, []);
   return (
     <div>
-      <div className="hero-section flex flex-col items-start justify-center   text-white   h-[80vh]">
+      <div className="hero-section flex flex-col items-start justify-center   text-white   h-[80vh] md:px-8">
         <h1 className="text-2xl font-bold leading-10 text-[#16f2b3] md:font-extrabold lg:text-[2.6rem] lg:leading-[3.5rem]">
           <span className="text-red-400">Hi</span>
           <Typewriter
@@ -101,10 +101,8 @@ function HeroSection() {
 
           <a
             className="flex items-center gap-1 hover:gap-3 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 px-3 md:px-8 py-3 md:py-4 text-center text-xs md:text-sm font-medium uppercase tracking-wider text-white no-underline transition-all duration-200 ease-out hover:text-white hover:no-underline md:font-semibold"
-            role="button"
-            href={"/files/arman_updated_cv.pdf"}
-            //    href={'/'}
-            rel="noreferrer"
+            role="button" 
+            href="https://raw.githubusercontent.com/arman229/arman229/master/armancv.pdf"             rel="noreferrer"
             target="_blank"
           >
             <span>Get Resume</span>

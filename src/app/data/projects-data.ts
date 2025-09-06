@@ -1,23 +1,11 @@
-import weatherimage from "../images/projects/weather.png"
-import ai_video from "../images/projects/ai_video_gen.png"
-import ecommereceproject from "../images/projects/newecommerece.png"
-import full_stack_eco from "../images/projects/armanstore.png"
- 
-
+  
+// npx next dev -H 0.0.0.0 -p 3000
  
 const DataCard = [
+    
     {
         id: "1",
-        image: full_stack_eco,
-        heading: "ArmansStore — AI-Powered E-Commerce",
-        detail:"Backend APIs with AI chatbot, RAG, and visual search.",
-        demo: "https://armanstore.vercel.app/",
-        github: "https://github.com/arman229",  
-        techused: ['FastAPI', 'Python', 'Next.js']
-    },
-    {
-        id: "2",
-        image: ai_video,
+        image: '/images/projects/ai_video_gen.png',
         heading: "SnuggleFable — Agentic AI Video Generator",
         detail:
             "AI platform that converts story themes into videos.",
@@ -26,8 +14,29 @@ const DataCard = [
         techused: ['Python','OpenAI Agents SDK', 'Next.js']
     },
     {
+        id: "2",
+        image: '/images/projects/armanstore.png',
+        heading: "ArmansStore — AI-Powered E-Commerce",
+        detail:"Backend APIs with AI chatbot, RAG, and visual search.",
+        demo: "https://armanstore.vercel.app/",
+        github: "https://github.com/arman229",  
+        techused: ['FastAPI', 'Python', 'Next.js']
+    },
+
+    {
         id: "3",
-        image:ecommereceproject,
+        image: '/images/projects/aiphotocraft.png', // replace with your actual image import
+        heading: "AI PhotoCraft — AI-Powered Photo Editing Companion",
+        detail:
+            "An intelligent AI photo editing tool that lets users enhance, retouch, and transform images with styles, backgrounds, and effects.",
+        demo: "https://aiphotocraft.vercel.app/",
+        github: "https://github.com/arman229", 
+        techused: ["Next.js", "Prompt Engineering", "Gemini Model", "AI"]
+    },
+    
+    {
+        id: "4",
+        image:'/images/projects/newecommerece.png',
         heading: "E-commerce project",
         detail:
             "Intuitive and visually appealing frontend for your eCommerce store.  ",
@@ -37,8 +46,8 @@ const DataCard = [
         ]
     },
     {
-        id: "4",
-        image: weatherimage,
+        id: "5",
+        image: '/images/projects/weather.png',
         heading: "Weather Web App",
         detail:
             "A compilation of my weather web app projects exemplifying innovation and skill.",

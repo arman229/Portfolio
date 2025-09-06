@@ -18,7 +18,7 @@ export default function MyCertificate() {
   return (
     <div
        
-      className="rela tive z-50 border-t my-12 lg:my-24 border-[#25213b]"
+      className="rela tive z-50 border-t my-12  md:px-8 lg:my-24 border-[#25213b]"
     >
       <div className="w-[100px] h-[100px] bg-violet-100 rounded-full abso lute top-6 left-[42%] translate-x-1/2 filter blur-3xl  opacity-20"></div>
 
@@ -60,7 +60,7 @@ export default function MyCertificate() {
           
             <SwiperSlide key={index} className="">
               <div style={paperStyle}>
-                <Image
+                <img
                   className=" transition-all duration-1000   hover:scale-110 cursor-pointer"
                   src={certificate.image}
                   alt={certificate.title}

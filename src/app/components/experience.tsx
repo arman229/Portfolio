@@ -1,11 +1,11 @@
-'use client'
+"use client";
 import { BsPersonWorkspace } from "react-icons/bs";
 import lottieFile from "@/app/lottie/code.json";
 import Lottie from "lottie-react";
 import { experiences } from "@/app/data/experience";
 // import GlowCard from "@/app/components/glow-card";
-  
-import Image from "next/image"
+
+import Image from "next/image";
 
 function Experience() {
   const defaultOptions = {
@@ -19,7 +19,7 @@ function Experience() {
   return (
     <div
       id="experience"
-      className="rel ative z-50 border-t my-12 lg:my-24 border-[#25213b]"
+      className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]"
     >
       <Image
         src={"/images/experience/section.svg"}
@@ -41,16 +41,10 @@ function Experience() {
 
       <div className="py-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
-          
-
           <div>
             <div className="flex flex-col gap-6">
               {experiences.map((experience) => (
-                <div
-                  key={experience.id}
-               
-                  className="border border-[#2a2e5a] "
-                >
+                <div key={experience.id} className="border border-[#2a2e5a] ">
                   <div className="p-3 relative">
                     <Image
                       src={"/images/experience/blur-23.svg"}
@@ -64,9 +58,13 @@ function Experience() {
                         {experience.duration}
                       </p>
                     </div>
-                    <div className="flex items-center gap-x-8 px-3 py-5">
+                    <div className="flex items-center sm:gap-x-8 sm:px-3 py-5">
                       <div className="text-violet-500  transition-all duration-300 hover:scale-125">
-                        <BsPersonWorkspace size={36} />
+                        {/* <BsPersonWorkspace size={36} /> */}
+                        {/* Only visible on md and larger screens */}
+                        <div className="hidden md:block">
+                          <BsPersonWorkspace size={36} />
+                        </div>
                       </div>
                       <div>
                         <p className="text-base sm:text-xl mb-2 font-medium uppercase">
@@ -75,8 +73,12 @@ function Experience() {
                         <p className="text-base sm:text-md mb-2 font-medium ">
                           {experience.company}{" "}
                         </p>
-                        {experience.description.map((des,index) => {
-                          return <p className="text-sm sm:text-base" key={index}>{des}</p>;
+                        {experience.description.map((des, index) => {
+                          return (
+                            <p className="text-sm sm:text-base" key={index}>
+                              {des}
+                            </p>
+                          );
                         })}
                       </div>
                     </div>
@@ -84,7 +86,8 @@ function Experience() {
                 </div>
               ))}
             </div>
-          </div><div className="flex justify-center items-start">
+          </div>
+          <div className="flex justify-center items-start">
             <div className="w-full h-full">
               <Lottie {...defaultOptions} />
             </div>
