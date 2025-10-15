@@ -15,7 +15,7 @@ function AboutSection() {
             🧠 Who I am?
           </p>
           <p className="text-gray-200 text-sm lg:text-lg">
-            I’m Arman Muhammad Ashraf, a Backend AI Engineer and Agentic AI
+            {/* I’m Arman Muhammad Ashraf, a Backend AI Engineer and Agentic AI
             Specialist passionate about building autonomous, intelligent systems
             that solve real-world problems. With a strong foundation in
             mathematics and hands-on expertise in Python, FastAPI, and Next.js,
@@ -23,7 +23,11 @@ function AboutSection() {
             pipelines that merge cutting-edge AI capabilities with robust
             backend architectures. I thrive at the intersection of AI innovation
             and software engineering precision, turning concepts into
-            production-ready products that deliver impact.{" "}
+            production-ready products that deliver impact.{" "} */}
+
+            I’m Arman Ashraf, a
+             Backend AI Engineer with over two years of experience in FastAPI, multi-agent pipelines, and RAG systems. Proven ability to design and deploy efficient, production-ready AI solutions that automate complex workflows. Successfully founded and built an Agentic AI platform that produces YouTube Shorts from simple story prompts, fully automating the content creation pipeline. Skilled in building scalable APIs and integrating AI agents to power applications for e-commerce, chatbots, and video automation.
+         
           </p>
         </div>
         <div className="flex justify-center order-1 lg:order-2">

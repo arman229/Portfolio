@@ -1,45 +1,51 @@
 export const experiences = [
- 
-
   {
     id: 1,
-    title: "Full-Stack AI-Powered Developer",
-    company: "Self-Employed",
-    duration: "(Jan 2025 – Present)",
+    title: "Dream Interpretation Assistant",
+    company: "Freelance",
+    duration: "(Sep 2025 - Oct 2025)",
     description: [
-      "Led backend API development (FastAPI) for product catalog, cart, checkout, and order tracking.",
-      "Built secure authentication & authorization workflows for customers and admins.",
-      "Integrated an AI-powered chatbot using the OpenAI Agents SDK with RAG support for company documents and product FAQs.",
-      "Designed and implemented a visual search pipeline using CLIP for image embeddings and Pinecone for vector similarity search.",
-      "Deployed the platform using Docker and managed CI/CD workflows to Vercel and Hugging Face Spaces.",
-      "Tech: FastAPI, Python, Next.js, Tailwind, Docker, CLIP, Pinecone, SQLModel."
-    ]
+      "Designed an AI system converting Arabic dream narratives into structured insights and cinematic video stories.",
+      "Built NLP pipelines for extracting symbols, emotions, and meanings; integrated text-to-image generation.",
+      "Delivered a seamless pipeline combining narration, visualization, and video generation.",
+      "Tech: Python, FastAPI, OpenAI API, NLP, Prompt Engineering.",
+    ],
   },
-
   {
     id: 2,
-    title: "AI Developer & Project Founder — SnuggleFable",
+    title: "Full-Stack Developer & AI Agent Engineer",
     company: "Self-Employed",
-    duration: "(Jan 2025 – Present)",
+    duration: "(Jan 2025 - Aug 2025)",
     description: [
-      "Designed and implemented an end-to-end agentic AI platform that converts a simple story theme into a ready-to-publish vertical video (YouTube Shorts).",
-      "Built a modular multi-agent pipeline using the OpenAI Agents SDK: Story Agent, Image Prompt Agent, Sound Design Agent, Voice Module, and Final Composer.",
-      "Implemented image generation, TTS, and video composition modules, orchestrated with asynchronous pipelines for concurrent asset generation.",
-      "Applied advanced prompt engineering for AI-driven content creation.",
-      "Tech: Python, FastAPI, OpenAI Agents SDK, Docker, TTS, MoviePy, ffmpeg, Next.js (frontend)."
-    ]
+      "Developed a complete AI-powered e-commerce application with product recommendations, order tracking, complaint management, and visual search.",
+      "Integrated AI chatbot using OpenAI Agents SDK with RAG (Pinecone) for accurate responses.",
+      "Built visual search with CLIP embeddings, enabling product matching and reducing manual classification.",
+      "Designed and deployed scalable backend APIs with FastAPI and Docker; integrated with Next.js frontend.",
+      "Tech: FastAPI, Python, Next.js, OpenAI Agents SDK, Pinecone, CLIP, Docker.",
+    ],
   },
-
   {
     id: 3,
-    title: "Full-Stack Developer",
+    title: "AI Developer & Project Founder",
     company: "Self-Employed",
-    duration: "(Jan 2023 – Present)",
+    duration: "(Jul 2024 - Jun 2025)",
     description: [
-      "Used HTML, CSS, JavaScript, and React for UI development.",
-      "Integrated jQuery, Bootstrap, and Material UI.",
-      "Mastered React Hooks for state management and implemented functional components.",
-      "Developed backend services using Python, FastAPI, Next.js, and Tailwind CSS."
-    ]
-  }
+      "Founded SnuggleFable, an agentic AI platform producing YouTube Shorts from simple story prompts.",
+      "Built a multi-agent pipeline (Story Agent, Image Prompt Agent, Sound Design Agent, Voice, Composer) with OpenAI SDK.",
+      "Implemented image generation, TTS, and video composition with async pipelines for efficiency.",
+      "Tech: Python, FastAPI, OpenAI Agents SDK, TTS, MoviePy, Next.js.",
+    ],
+  },
+  {
+    id: 4,
+    title: "Full-Stack Developer",
+    company: "Freelance",
+    duration: "(Jul 2023 - Jun 2024)",
+    description: [
+      "Delivered responsive UIs and secure APIs across multiple projects.",
+      "Built applications with React, Next.js, Tailwind CSS, FastAPI, Python.",
+      "Ensured frontend performance and backend scalability.",
+      "Tech: HTML, CSS, JavaScript, React, Python, FastAPI, Next.js, Tailwind CSS.",
+    ],
+  },
 ];
