@@ -87,7 +87,7 @@ export const COURSES: Course[] = [
     title: 'Python for AI & Backend Development',
     description: 'Master Python programming with a focus on AI applications, backend development, and automation pipelines.',
     level: 'Advanced',
-    image: '/images/courses/pythonnew.png',
+    image: '/images/courses/python.png',
     url: '#'
   },
   {
