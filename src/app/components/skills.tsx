@@ -1,5 +1,6 @@
 import Marquee from "react-fast-marquee";
 import { skillsData } from "../data/constant";  
+import Image from "next/image";
 function Skills() {
   return (
     <div
@@ -48,13 +49,13 @@ function Skills() {
                   </div>
                   <div className="flex flex-col items-center justify-center gap-3 p-6">
                     <div className="h-8 sm:h-10">
-                      {/* <Image
+                      <Image
                         src={skill.image}
                         alt={skill.name}
                         width={40}
                         height={40}
                         className="h-full w-auto rounded-lg"
-                      /> */}
+                      />
                     </div>
                     <p className="text-white text-sm sm:text-lg">
                       {skill.name}

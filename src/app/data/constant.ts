@@ -1,4 +1,3 @@
-
 import { Project, Service, Course, Testimonial, BlogPost, Education, Certificate, Achievement, ProcessStep, FaqItem } from "@/app/data/types";
 export const skillsData = [
   {
