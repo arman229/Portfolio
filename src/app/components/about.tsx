@@ -1,47 +1,162 @@
-import { personalData } from "@/app/data/personaldata";
-import Image from "next/image";
-function AboutSection() {
-  return (
-    <div id="about" className="   my-12 lg:my-16 relative md:px-8">
-      <div className="hidden lg:flex flex-col items-center absolute  top-16 -right-8">
-        <span className="bg-[#1a1443] w-fit text-white rotate-90 p-2 px-5 text-xl rounded-md">
-          ABOUT ME
-        </span>
-        <span className="h-36 w-[2px] bg-[#1a1443]"></span>
-      </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 ">
-        <div className="order-2 lg:order-1">
-          <p className="font-medium mb-5 text-[#16f2b3] text-xl uppercase">
-            🧠 Who I am?
-          </p>
-          <p className="text-gray-200 text-sm lg:text-lg">
-            {/* I’m Arman Muhammad Ashraf, a Backend AI Engineer and Agentic AI
-            Specialist passionate about building autonomous, intelligent systems
-            that solve real-world problems. With a strong foundation in
-            mathematics and hands-on expertise in Python, FastAPI, and Next.js,
-            I design and develop scalable APIs, AI-powered agents, and RAG
-            pipelines that merge cutting-edge AI capabilities with robust
-            backend architectures. I thrive at the intersection of AI innovation
-            and software engineering precision, turning concepts into
-            production-ready products that deliver impact.{" "} */}
+"use client";
 
-            I’m Arman Ashraf, a
-             Backend AI Engineer with over two years of experience in FastAPI, multi-agent pipelines, and RAG systems. Proven ability to design and deploy efficient, production-ready AI solutions that automate complex workflows. Successfully founded and built an Agentic AI platform that produces YouTube Shorts from simple story prompts, fully automating the content creation pipeline. Skilled in building scalable APIs and integrating AI agents to power applications for e-commerce, chatbots, and video automation.
-         
-          </p>
+import Image from "next/image";
+import { useEffect, useRef } from "react";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { FaEnvelope } from "react-icons/fa";
+import { MdDownload } from "react-icons/md";
+import { RiContactsFill } from "react-icons/ri";
+import Link from "next/link";
+import Typewriter, { TypewriterClass } from "typewriter-effect";
+import { MutableRefObject } from "react";
+import { personalData } from "../data/constant";
+
+function AboutSection() {
+  const typewriterRef: MutableRefObject<TypewriterClass | null> = useRef(null);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (typewriterRef.current) {
+        typewriterRef.current
+          .typeString("Full-Stack Developer")
+          .pauseFor(1000)
+          .deleteAll()
+          .typeString("Developing AI Systems.")
+          .pauseFor(1000)
+          .deleteAll()
+          .typeString("Backend API Builder")
+          .pauseFor(1000)
+          .deleteAll()
+          .typeString("Visual & Textual RAG expert.")
+          .pauseFor(800)
+          .deleteAll()
+          .typeString("Production-ready AI web apps.")
+          .pauseFor(1000)
+          .deleteAll()
+          .start();
+      }
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <section
+     
+      className="relative min-h-screen pt-24 md:pt-12 px -6 max-w-7xl mx-auto flex items-center"
+    >
+      <div className="w-full flex flex-col lg:flex-row items-center justify-around gap-16">
+        {/* ================= TEXT CONTENT ================= */}
+        <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
+          <div className="inline-block px-4 py-1.5 mb-6 bg-slate-800/50 border border-slate-700 rounded-full text-xs font-bold tracking-widest text-indigo-400 uppercase">
+            Available for New Opportunities
+          </div>
+
+          <h1 className="text-2xl sm:text-3xl lg:text-5xl font-extrabold text-[#16f2b3]">
+            <span className="text-red-400">Hi, </span>
+            <Typewriter
+              onInit={(typewriter) => {
+                typewriter.typeString("I'm Arman.").start();
+              }}
+            />
+          </h1>
+
+          <h2 className="mt-3 min-h-[40px] text-lg sm:text-xl lg:text-3xl font-semibold text-white">
+            <Typewriter
+              options={{ loop: true }}
+              onInit={(typewriter) => {
+                typewriterRef.current = typewriter;
+              }}
+            />
+          </h2>
+
+          {/* ================= SOCIAL LINKS ================= */}
+          <div className="my-8 flex items-center gap-6">
+            <Link
+              href="https://github.com/arman229"
+              target="_blank"
+              className="text-pink-500 hover:scale-125 transition-all"
+            >
+              <BsGithub size={28} />
+            </Link>
+
+            <Link
+              href="https://www.linkedin.com/in/arman-ashraf/"
+              target="_blank"
+              className="text-pink-500 hover:scale-125 transition-all"
+            >
+              <BsLinkedin size={28} />
+            </Link>
+
+            <Link
+              href="mailto:armanashraf015@gmail.com"
+              className="text-pink-500 hover:scale-125 transition-all"
+            >
+              <FaEnvelope size={28} />
+            </Link>
+          </div>
+
+          {/* ================= CTA BUTTONS ================= */}
+          <div className="flex flex-wrap justify-center lg:justify-start gap-4">
+            <Link
+              href="mailto:armanashraf015@gmail.com"
+              className="bg-gradient-to-r from-violet-600 to-pink-500 p-[1px] rounded-full"
+            >
+              <button className="px-6 py-3 bg-[#0d1224] rounded-full text-sm font-semibold text-white flex items-center gap-2 hover:gap-3 transition-all">
+                Contact Me
+                <RiContactsFill size={16} />
+              </button>
+            </Link>
+
+            <a
+              href="https://raw.githubusercontent.com/arman229/arman229/master/armancv.pdf"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 text-sm font-semibold text-white hover:gap-3 transition-all"
+            >
+              Get Resume
+              <MdDownload size={16} />
+            </a>
+          </div>
+
+          {/* ================= STATS ================= */}
+          <div className="mt-12 flex items-center gap-8 opacity-70">
+            <Stat number="3+" label="Years Exp." />
+            <Divider />
+            <Stat number="10+" label="Projects" />
+            <Divider />
+            <Stat number="12+" label="Courses" />
+          </div>
         </div>
-        <div className="flex justify-center order-1 lg:order-2">
-          <Image
-            src={personalData.profile}
-            width={280}
-            height={280}
-            alt="Arman"
-            className="rounded-lg transition-all duration-1000 grayscale  hover:scale-110 cursor-pointer"
-          />
+
+        <div className=" relative relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
+          <div className="relative z-10 w-full aspect-square max-w-md mx-auto overflow-hidden rounded-3xl border border-white/10 shadow-2xl">
+            {" "}
+            <Image
+              src={personalData.profile}
+              width={450}
+              height={280}
+              alt="Arman"
+              className="rounded-lg transition-all duration-1000 grayscale hover:scale-110 cursor-pointer"
+            />
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
 export default AboutSection;
+
+/* ================= SMALL COMPONENTS ================= */
+
+const Stat = ({ number, label }: { number: string; label: string }) => (
+  <div className="text-center lg:text-left">
+    <div className="text-2xl font-bold">{number}</div>
+    <div className="text-xs uppercase tracking-wider text-slate-500 font-bold">
+      {label}
+    </div>
+  </div>
+);
+
+const Divider = () => <div className="h-8 w-[1px] bg-slate-700" />;

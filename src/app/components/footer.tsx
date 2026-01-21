@@ -1,86 +1,102 @@
-import React from "react";
-import {
-  FaGithub,
-  FaLinkedin,
-  FaEnvelope,
-  FaPhone,
-  FaMapMarkerAlt,
-} from "react-icons/fa";
-import Link from 'next/link'
+import React, { useEffect, useRef, useState } from "react";
+import Link from "next/link";
+import { Github, Linkedin, LinkIcon, Twitter } from "lucide-react";
 
 function Footer() {
-  return (
-    <div>
-      <footer
-        id={"footer"}
-        className="  text-white md:px-8  bg-[#090d1b] bt-black-400"
-        style={{ borderTop: "3px solid white" }}
-      >
-        <div className="container mx-auto px-4 py-8 lg:py-8 ">
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4  ">
-            <div>
-              <h6 className="text-lg font-bold mb-4">Contact</h6>
-              <div className="py-1 flex items-center hover:underline hover:text-white ">
-                <FaEnvelope className="mr-2" />
-                <a href="mailto:armanashraf015@gmail.com">Email</a>
-              </div>
+  const [scrolled, setScrolled] = useState(false);
+  const navbarRef = useRef<HTMLDivElement>(null); // Specify the type explicitly
 
-              <div className="py-1 flex items-center">
-                <FaPhone className="mr-2" />
-                <span>Phone: +92 3021636805</span>
-              </div>
-              <div className="py-1 flex items-center">
-                <FaMapMarkerAlt className="mr-2" />
-                <span>Location: Pakistan</span>
-              </div>
-            </div>
-            <div>
-              <h6 className="text-lg font-bold mb-4">Links</h6>
-              <div className="py-1 text-md hover:underline hover:text-white">
-                <Link href="#about">About Us</Link>
-              </div>
-              <div className="py-1  hover:underline hover:text-white">
-                <Link href="/">Portfolio</Link>
-              </div>
-              <div className="py-1  hover:underline hover:text-white">
-                <Link href="mailto:armanashraf015@gmail.com">Contact</Link>
-              </div>
-            </div>
-            <div>
-              <h6 className="text-lg font-bold mb-4">Resources</h6>
-              <div className="py-1 flex items-center">
-                <FaGithub className="mr-2" />
-                <Link
-                  href="https://github.com/arman229"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  GitHub
-                </Link>
-              </div>
-            </div>
-            <div>
-              <h6 className="text-lg font-bold mb-4">Social</h6>
-              <div className="py-1 flex items-center ">
-                <Link
-                  className="flex items-center "
-                  href="https://www.linkedin.com/in/arman-agentic-ai/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaLinkedin className="mr-2" />
-                  LinkedIn
-                </Link>
-              </div>
-            </div>
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 20);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        navbarRef.current &&
+        !navbarRef.current.contains(event.target as Node)
+      ) {
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const handleClick =
+    (sectionId: string) =>
+    (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+      e.preventDefault(); // Prevent default Link behavior
+      scrollToSection(sectionId);
+    };
+
+  return (
+    <footer className="py-12 border-t border-slate-800 mt-12">
+      <div className="container mx-auto px-6">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+          <div className="text-2xl font-bold font-serif tracking-tighter">
+            Arman<span className="text-indigo-500">.</span>DEV
           </div>
-          <div className="mt-8 text-center text-xl   ">
-            <p>&copy; {new Date().getFullYear()} All rights reserved.</p>
+
+          <div className="flex space-x-8 text-sm text-slate-500">
+            <Link
+              href="/"
+              onClick={handleClick("about")}
+              className="hover:text-white transition-colors"
+            >
+              Privacy
+            </Link>
+            <Link
+              href="/"
+              onClick={handleClick("about")}
+              className="hover:text-white transition-colors"
+            >
+              Terms
+            </Link>
+            <Link
+              href="/"
+              onClick={handleClick("about")}
+              className="hover:text-white transition-colors"
+            >
+              Colophon
+            </Link>
+          </div>
+
+          <div className="flex space-x-4">
+            <Link
+              href="https://github.com/arman229"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-indigo-600 transition-all border border-slate-700"
+            >
+              <Github className="w-5 h-5" />
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/arman-ashraf/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-indigo-600 transition-all border border-slate-700"
+            >
+              <Linkedin className="w-5 h-5" />
+            </Link>
           </div>
         </div>
-      </footer>
-     
-    </div>
+        <div className="text-center mt-12 text-slate-600 text-xs">
+          © {new Date().getFullYear()} Arman Dev Portfolio.
+        </div>
+      </div>
+    </footer>
   );
 }
 

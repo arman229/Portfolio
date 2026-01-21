@@ -1,89 +1,105 @@
-'use client'
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
+"use client";
 import "react-vertical-timeline-component/style.min.css";
-import { FaUniversity, FaGraduationCap, FaSchool } from "react-icons/fa";
+import { CheckCircle2, GraduationCap, Trophy } from "lucide-react";
+import { EDUCATION, ACHIEVEMENTS, SKILLS } from "../data/constant";
 
 function Eduction() {
   return (
-    <div
-      id="education"
-      className="r elative z-50 border-t my-12 lg:my-24 border-[#25213b]"
-    >
-      <div className="w-[100px] h-[100px] bg-violet-100 rounded-full absol ute top-6 left-[42%] translate-x-1/2 filter blur-3xl  opacity-20"></div>
+    <section id="about" className="py-24 bg- [#0a0f1e] ">
+      <div className="max-w-7xl mx-auto mx-auto px-6">
+        <div className="grid lg:grid-cols-2 gap-16 items-start">
+          <div>
+            <h2 className="text-4xl font-bold mb-8">
+              Building Production-Ready AI
+              <span className="text-indigo-400"> Projects</span>.
+            </h2>
+            <p className="text-slate-400 mb-6 leading-relaxed">
+              I’m a Backend AI Engineer specializing in FastAPI, agentic AI
+              pipelines, and RAG systems. I design and deploy production-ready
+              AI solutions that automate complex workflows, power scalable APIs,
+              and deliver real-world impact across content, e-commerce, and
+              intelligent applications.
+            </p>
 
-      <div className="flex justify-center -translate-y-[1px]">
-        <div className="w-3/4">
-          <div className="h-[1px] bg-gradient-to-r from-transparent via-violet-500 to-transparent  w-full" />
+            <div className="mt-12">
+              <div className="flex items-center space-x-4 mb-6">
+                <GraduationCap className="w-8 h-8 text-indigo-400" />
+                <h3 className="text-2xl font-bold">Education</h3>
+              </div>
+              <div className="space-y-8 relative before:absolute before:inset-0 before:left-3.5 before:w-[1px] before:bg-slate-800">
+                {EDUCATION.map((edu) => (
+                  <div key={edu.id} className="relative pl-12 group">
+                    <div className="absolute left-0 top-1.5 w-7 h-7 bg-[#0a0f1e] border border-slate-700 rounded-full flex items-center justify-center group-hover:border-indigo-500 transition-colors">
+                      <div className="w-2 h-2 rounded-full bg-slate-700 group-hover:bg-indigo-500 transition-colors" />
+                    </div>
+                    <div className="text-indigo-400 text-sm font-bold mb-1">
+                      {edu.period}
+                    </div>
+                    <h4 className="text-lg font-bold">{edu.degree}</h4>
+                    <div className="text-slate-500 text-sm font-medium mb-2">
+                      {edu.institution}
+                    </div>
+                    <p className="text-slate-400 text-sm leading-relaxed">
+                      {edu.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="space-y-6">
+            <div className="glass-morphism p-8 rounded-3xl">
+              <h3 className="text-xl font-bold mb-6 flex items-center gap-3">
+                <Trophy className="w-6 h-6 text-yellow-500" />
+                Key Achievements
+              </h3>
+              <div className="space-y-6">
+                {ACHIEVEMENTS.map((ach) => (
+                  <div key={ach.id} className="flex gap-4">
+                    <div className="mt-1">
+                      <CheckCircle2 className="w-5 h-5 text-indigo-500" />
+                    </div>
+                    <div>
+                      <div className="font-bold text-slate-200">
+                        {ach.title}
+                      </div>
+                      <p className="text-slate-400 text-sm">
+                        {ach.description}
+                      </p>
+                      <div className="text-xs text-slate-600 mt-1 font-bold">
+                        {ach.date}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {SKILLS.map((skillGroup) => (
+              <div
+                key={skillGroup.category}
+                className="glass-morphism p-6 rounded-2xl"
+              >
+                <h3 className="text-sm font-bold uppercase tracking-widest text-slate-500 mb-4">
+                  {skillGroup.category}
+                </h3>
+                <div className="flex flex-wrap gap-3">
+                  {skillGroup.items.map((skill) => (
+                    <span
+                      key={skill}
+                      className="px-4 py-2 bg-slate-800/80 text-indigo-300 rounded-lg text-sm font-medium border border-indigo-500/10 hover:border-indigo-500/30 transition-colors"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
-
-      <div className="flex justify-center my-5 lg:py-8">
-        <div className="flex  items-center">
-          <span className="w-24 h-[2px] bg-[#1a1443]"></span>
-          <span className="bg-[#1a1443] w-fit text-white p-2 px-5 text-xl rounded-md">
-            Educations
-          </span>
-          <span className="w-24 h-[2px] bg-[#1a1443]"></span>
-        </div>
-      </div>
-      <VerticalTimeline>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work  "
-          contentStyle={{ background: "#161a2f", boxShadow: "none" }}
-          contentArrowStyle={{ borderRight: "7px solid  #161a2f" }}
-          date="2023 - present"
-          visible={true}
-          iconStyle={{ background: "#1a1443", color: "#fff" }}
-          icon={<FaUniversity />}
-        >
-          <h3 className="vertical-timeline-element-title text-2xl text-[#16f2b3]">
-            Generative AI Engineer
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle text-md pt-2">
-            Presidential Initiative for Artificial Intelligence & Computing
-          </h4>
-          <p className="text-lg">Grade: A</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          contentStyle={{ background: "#161a2f", boxShadow: "none" }}
-          contentArrowStyle={{ borderRight: "7px solid  #161a2f" }}
-          className="vertical-timeline-element--work"
-          visible={true}
-          date="2018 - 2022"
-          iconStyle={{ background: "#1a1443", color: "#fff" }}
-          icon={<FaGraduationCap />}
-        >
-          <h3 className="vertical-timeline-element-title text-2xl text-[#16f2b3]">
-            BS Mathematics
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle text-md pt-2">
-            {" "}
-            Govt Murray College,Sialkot
-          </h4>
-          <p className="text-lg">Grade: A</p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: "#161a2f", boxShadow: "none" }}
-          contentArrowStyle={{ borderRight: "7px solid  #161a2f" }}
-          date="2016 - 2018"
-          visible={true}
-          iconStyle={{ background: "#1a1443", color: "#fff" }}
-          icon={<FaSchool />}
-        >
-          <h3 className="vertical-timeline-element-title text-2xl text-[#16f2b3]">
-            Engineering
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle text-md pt-2">
-            Govt Allama Iqbal College,Sialkot
-          </h4>
-          <p className="text-lg">Grade:B</p>
-        </VerticalTimelineElement>
-      </VerticalTimeline>
-    </div>
+    </section>
   );
 }
 

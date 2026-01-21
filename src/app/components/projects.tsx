@@ -1,95 +1,75 @@
 "use client";
 
 import React from "react";
-import DataCard from "../data/projects-data";
-import { BsGithub } from "react-icons/bs";
+import { ExternalLink } from "lucide-react";
+import { PROJECTS } from "../data/constant";
 import Image from "next/image";
 
 function Projects() {
   return (
-    <div>
-      <div
-        id="projects"
-        className="relative z-50 border-t my-12 lg:my-24 md:px-8 border-[#25213b]"
-      >
-        <div className="flex justify-center my-5 lg:py-8">
-          <div className="flex items-center">
-            <span className="w-16 md:w-24 h-[2px] bg-[#1a1443]"></span>
-            <span className="bg-[#1a1443] w-fit text-white px-4 py-2 md:px-5 text-lg md:text-xl rounded-md">
-              Projects
-            </span>
-            <span className="w-16 md:w-24 h-[2px] bg-[#1a1443]"></span>
-          </div>
+    <section id="projects" className="py-24">
+      <div className="container  max-w-7xl mx-auto mx-auto px-6">
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <h2 className="text-4xl font-bold mb-4">Featured Projects</h2>
+          <p className="text-slate-400">
+            Explore my latest work across various industries.
+          </p>
         </div>
-      </div>
-
-      <div className="mx-auto mb-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 lg:gap-16 px-2 sm:px-4 md:px-6 lg:px-8">
-          {DataCard.map((item) => (
+        <div className="grid md:grid-cols-2 gap-8 sm:gap-10">
+          {PROJECTS.map((project) => (
             <div
-              key={item.id}
-              className="bg-[#161a2f] rounded-lg shadow-md overflow-hidden flex flex-col"
+              key={project.id}
+              className="group flex flex-col bg-slate-900/40 border border-white/5 rounded-[32px] sm:rounded-[40px] overflow-hidden hover:bg-slate-800/40 transition-all duration-500 hover:border-indigo-500/20 shadow-2xl"
             >
-              {/* Responsive image */}
-              <div className="relative w-full h-56 sm:h-64 md:h-72 lg:h-80">
+              <div className="aspect-[16/10] overflow-hidden relative">
                 <Image
-                  src={item.image}
-                  alt={item.heading}
+                  src={project.image}
+                  alt={project.title}
                   fill
-                  className="object-cover rounded-t-lg"
-                  priority
+                  className="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
-
-              {/* Content */}
-              <div className="p-4 flex flex-col flex-grow">
-                <h3 className="text-base sm:text-lg md:text-xl font-medium mb-2">
-                  {item.heading}
+              {/* <div className="aspect-[16/10] overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                />
+              </div> */}
+              <div className="p-8 sm:p-10 flex flex-col flex-1">
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {project.techStack.map((tech) => (
+                    <span
+                      key={tech}
+                      className="px-2.5 py-1 bg-white/5 rounded-full text-[9px] sm:text-[10px] font-black text-slate-400 group-hover:text-indigo-300 group-hover:bg-indigo-500/10 uppercase tracking-widest transition-colors"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+                <h3 className="text-2xl sm:text-3xl font-bold mb-4 group-hover:text-indigo-400 transition-colors">
+                  {project.title}
                 </h3>
-                <p className="text-sm sm:text-base text-gray-300 mb-3">
-                  {item.detail}
+                <p className="text-slate-400 text-sm mb-6 flex-1 leading-relaxed line-clamp-3 group-hover:text-slate-300 transition-colors">
+                  {project.description}
                 </p>
-
-                <div className="mt-auto">
-                  <h2 className="text-sm sm:text-base md:text-lg font-semibold mb-1">
-                    Tech Used:
-                  </h2>
-                  <p className="text-xs sm:text-sm md:text-base text-gray-400">
-                    {item.techused
-                      .map(
-                        (tech) =>
-                          tech.charAt(0).toUpperCase() + tech.slice(1)
-                      )
-                      .join(", ")}
-                  </p>
-
-                  {/* Buttons */}
-                  <div className="mt-4 flex flex-wrap gap-2">
-                    <a
-                      href={item.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="bg-blue-500 hover:bg-blue-600 text-white text-sm sm:text-base py-2 px-4 rounded-md transition"
-                    >
-                      Live Demo
-                    </a>
-                    <a
-                      href={item.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-1 bg-gray-800 hover:bg-gray-700 text-white text-sm sm:text-base px-3 py-2 rounded-md transition"
-                    >
-                      <BsGithub size={18} /> Source Code
-                    </a>
-                  </div>
+                <div className="mt-auto pt-6 border-t border-white/5 flex items-center justify-between">
+                  <a
+                    href={project.liveUrl}
+                    className="flex items-center text-[10px] sm:text-sm font-bold uppercase tracking-widest text-indigo-500 hover:text-indigo-300 transition-colors group/link"
+                  >
+                    Live Case Study{" "}
+                    <ExternalLink className="ml-2 w-3.5 h-3.5 sm:w-4 sm:h-4 transition-transform group-hover/link:-translate-y-0.5" />
+                  </a>
                 </div>
               </div>
             </div>
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
-export default Projects;
+export { Projects };
