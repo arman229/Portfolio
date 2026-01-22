@@ -138,8 +138,8 @@ export const SERVICES: Service[] = [
 export const PROJECTS: Project[] = [
   {
     id: '0',
-    title: 'StyleMatch — AI Fashion Recommendations',
-    description: 'AI-based fashion recommendation system delivering personalized style suggestions.',
+    title: 'StyleMatch — AI Hairstyle Checker',
+    description: 'Enables users to virtually preview hairstyles and see how they would look after a haircut using AI.',
     image: '/images/projects/stylematch.png',
     tags: ['AI', 'Recommendation'],
     techStack: ['Next.js', 'FastAPI', 'Docker', 'AI'],
