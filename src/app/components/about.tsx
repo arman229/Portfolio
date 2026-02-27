@@ -121,7 +121,7 @@ function AboutSection() {
 
           {/* ================= STATS ================= */}
           <div className="mt-12 flex items-center gap-8 opacity-70">
-            <Stat number="3+" label="Years Exp." />
+            <Stat number="2+" label="Years Exp." />
             <Divider />
             <Stat number="10+" label="Projects" />
             <Divider />

@@ -9,7 +9,7 @@ export const ContactForm = () => {
         <div className="max-w-6xl mx-auto glass-morphism rounded-[40px] overflow-hidden">
           
           <div className="grid lg:grid-cols-2">
-            <div className="p-12 lg:p-20 bg-gradient-premium">
+            <div className="p-4 py-12 md:p-12 lg:p-20 bg-gradient-premium">
               <h2 className="text-5xl font-bold mb-8">
               Let&#39;s build <br />                <span className="text-indigo-400">something epic</span>.
               </h2>
@@ -56,7 +56,7 @@ export const ContactForm = () => {
               </div>
             </div>
 
-            <div className="p-12 lg:p-20 bg-slate-900/40">
+            <div className=" p-4 py-12 md:p-12 lg:p-20 bg-slate-900/40">
               <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="space-y-2">

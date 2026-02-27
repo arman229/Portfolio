@@ -136,19 +136,9 @@ export const SERVICES: Service[] = [
 ];
 
 export const PROJECTS: Project[] = [
+
   {
     id: '0',
-    title: 'StyleMatch — AI Hairstyle Checker',
-    description: 'Enables users to virtually preview hairstyles and see how they would look after a haircut using AI.',
-    image: '/images/projects/stylematch.png',
-    tags: ['AI', 'Recommendation'],
-    techStack: ['Next.js', 'FastAPI', 'Docker', 'AI'],
-    liveUrl: 'https://armanstylematch.vercel.app/',
-    githubUrl: 'https://github.com/arman229',
-    category: 'AI'
-  },
-  {
-    id: '1',
     title: 'SnuggleFable — Agentic AI Video Generator',
     description: 'Multi-agent AI system that turns story prompts into automated YouTube Shorts.',
     image: '/images/projects/ai_video_gen.png',
@@ -159,7 +149,28 @@ export const PROJECTS: Project[] = [
     category: 'AI'
   },
   {
+    id: '1',
+    title: 'Real-Time AI Interview Simulator',
+    description: 'Conduct live AI-powered interviews with adaptive questions, performance analytics, and instant PDF/Markdown report generation.',
+    image: '/images/projects/ai_live_interviewer.jpg', // make sure you have a corresponding image
+    tags: ['AI', 'Interview', 'Analytics'],
+    techStack: ['Next.js', 'FastAPI', 'Python', 'Docker'],
+    liveUrl: 'https://ailiveinterviewer.vercel.app/',
+    githubUrl: 'https://github.com/arman229',
+    category: 'AI'
+  }, {
     id: '2',
+    title: 'StyleMatch — AI Hairstyle Checker',
+    description: 'Enables users to virtually preview hairstyles and see how they would look after a haircut using AI.',
+    image: '/images/projects/stylematch.png',
+    tags: ['AI', 'Recommendation'],
+    techStack: ['Next.js', 'FastAPI', 'Docker', 'AI'],
+    liveUrl: 'https://armanstylematch.vercel.app/',
+    githubUrl: 'https://github.com/arman229',
+    category: 'AI'
+  },
+  {
+    id: '3',
     title: 'ArmanStore — AI E-Commerce Platform',
     description: 'AI-powered e-commerce platform with chatbot, RAG search, and visual product matching.',
     image: '/images/projects/armanstore.png',
@@ -169,8 +180,9 @@ export const PROJECTS: Project[] = [
     githubUrl: 'https://github.com/arman229',
     category: 'AI'
   },
+
   {
-    id: '3',
+    id: '4',
     title: 'AI PhotoCraft — AI Photo Editor',
     description: 'AI-driven photo editing app for image enhancement and creative transformations.',
     image: '/images/projects/aiphotocraft.png',
@@ -180,17 +192,17 @@ export const PROJECTS: Project[] = [
     githubUrl: 'https://github.com/arman229',
     category: 'AI'
   },
-  {
-    id: '4',
-    title: 'Modern E-Commerce Frontend',
-    description: 'Responsive e-commerce frontend built with modern UI and performance best practices.',
-    image: '/images/projects/ecommerece.png',
-    tags: ['Frontend', 'E-Commerce'],
-    techStack: ['Next.js', 'shadcn/ui', 'CSS'],
-    liveUrl: 'https://my-shopping-website-assignment.vercel.app/',
-    githubUrl: 'https://github.com/arman229',
-    category: 'Web'
-  },
+  // {
+  //   id: '4',
+  //   title: 'Modern E-Commerce Frontend',
+  //   description: 'Responsive e-commerce frontend built with modern UI and performance best practices.',
+  //   image: '/images/projects/ecommerece.png',
+  //   tags: ['Frontend', 'E-Commerce'],
+  //   techStack: ['Next.js', 'shadcn/ui', 'CSS'],
+  //   liveUrl: 'https://my-shopping-website-assignment.vercel.app/',
+  //   githubUrl: 'https://github.com/arman229',
+  //   category: 'Web'
+  // },
   {
     id: '5',
     title: 'Weather Web Application',
@@ -202,6 +214,7 @@ export const PROJECTS: Project[] = [
     githubUrl: 'https://github.com/arman229',
     category: 'Web'
   },
+
 
 ];
 export const PROCESS_STEPS: ProcessStep[] = [
