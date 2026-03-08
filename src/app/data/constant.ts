@@ -261,14 +261,14 @@ export const CERTIFICATES: Certificate[] = [
     url: 'https://www.coursera.org/account/accomplishments/specialization/F7Y7T8LGNX2W',
   },
   {
-    id: 'cert2',
+    id: 'cert6',
     title: 'Python for Everybody Specialization',
     issuer: 'University of Michigan',
     date: 'Nov 2024',
     url: 'https://www.coursera.org/account/accomplishments/specialization/TQWYPCLNPGDC',
   }
   , {
-    id: 'cert',
+    id: 'cert7', 
     title: 'Google Advanced Data Analytics Professional Certificate',
     issuer: 'Google',
     date: 'Nov 2025',
@@ -281,6 +281,13 @@ export const CERTIFICATES: Certificate[] = [
     issuer: 'Google',
     date: 'Dec 2025',
     url: 'https://www.coursera.org/account/accomplishments/specialization/W2J9ECV1QNBS'
+  },
+  {
+    id: 'cert9',
+    title: 'Agentic AI Professional Developer',
+    issuer: 'PIAIC',
+    date: 'Jan 2026',
+    url: 'https://www.piaic.org/'
   },
 
 ];
