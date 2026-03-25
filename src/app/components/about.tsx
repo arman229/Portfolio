@@ -109,7 +109,7 @@ function AboutSection() {
             </Link>
 
             <a
-              href="https://raw.githubusercontent.com/arman229/arman229/master/Arman_Ashraf_Backend_AI_Engineer.pdf"
+              href="https://raw.githubusercontent.com/arman229/arman229/master/Arman_Ashraf_AI_FullStack_Engineer.pdf"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-pink-500 to-violet-600 text-sm font-semibold text-white hover:gap-3 transition-all"
