@@ -16,25 +16,25 @@ export const MyBlog = () => {
           {BLOG_POSTS.map((post) => (
             <div
               key={post.id}
-              className="group flex flex-col md:flex-row gap-8 items-center cursor-pointer"
+              className="group flex flex-col md:flex-row gap-8 items-center "
             >
-              {/* <div className="w-full md:w-48 h-48 rounded-2xl overflow-hidden shrink-0">
+              <div className="w-full md:w-48 h-48 rounded-2xl overflow-hidden shrink-0">
                 <img
                   src={post.image}
                   alt={post.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-              </div> */}
+              </div>
 
-              <div className="w-full md:w-48 h-48 rounded-2xl overflow-hidden shrink-0 relative">
-                <Image
+              {/* <div className="w-full md:w-48 h-48 rounded-2xl overflow-hidden shrink-0 relative"> */}
+              {/* <Image
                   src={post.image}
                   alt={post.title}
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 12rem"
-                />
-              </div>
+                /> */}
+              {/* </div> */}
               <div>
                 <div className="text-xs font-bold text-slate-500 mb-2 uppercase tracking-widest">
                   {post.date}
@@ -45,9 +45,15 @@ export const MyBlog = () => {
                 <p className="text-slate-400 leading-relaxed mb-4 line-clamp-2">
                   {post.summary}
                 </p>
-                <div className="flex items-center text-sm font-bold text-white group-hover:translate-x-2 transition-transform">
+                 
+                <a
+                  href={post.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center text-sm font-bold text-white group-hover:translate-x-2 transition-transform"
+                >
                   Read Story <ArrowRight className="ml-2 w-4 h-4" />
-                </div>
+                </a>
               </div>
             </div>
           ))}

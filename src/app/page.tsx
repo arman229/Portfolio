@@ -29,11 +29,12 @@ export default function Home() {
       <Courses />
       <CertificateCarousel />
       <Eduction />
+      <MyBlog />
       <ContactForm />
       <Footer />
       {/* 
       <Testominal />
-      <MyBlog />
+      // 
       <Faq />
        <AiChat isNavbarOpen={isMenuOpen} />
        */}

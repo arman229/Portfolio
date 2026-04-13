@@ -14,11 +14,12 @@ function Eduction() {
               <span className="text-indigo-400"> Projects</span>.
             </h2>
             <p className="text-slate-400 mb-6 leading-relaxed">
-              I’m a Backend AI Engineer specializing in FastAPI, agentic AI
-              pipelines, and RAG systems. I design and deploy production-ready
-              AI solutions that automate complex workflows, power scalable APIs,
-              and deliver real-world impact across content, e-commerce, and
-              intelligent applications.
+              I am a Full-Stack AI Engineer specializing in building scalable
+              backend systems and modern frontend applications using FastAPI,
+              Next.js, and agentic AI pipelines. I design and deploy
+              production-ready solutions that automate workflows, power
+              intelligent APIs, and deliver real-world impact across e-commerce,
+              content generation, and AI-driven applications.
             </p>
 
             <div className="mt-12">

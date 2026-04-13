@@ -268,7 +268,7 @@ export const CERTIFICATES: Certificate[] = [
     url: 'https://www.coursera.org/account/accomplishments/specialization/TQWYPCLNPGDC',
   }
   , {
-    id: 'cert7', 
+    id: 'cert7',
     title: 'Google Advanced Data Analytics Professional Certificate',
     issuer: 'Google',
     date: 'Nov 2025',
@@ -323,27 +323,40 @@ export const TESTIMONIALS: Testimonial[] = [
 export const BLOG_POSTS: BlogPost[] = [
   {
     id: 'b1',
-    title: 'The Future of AI in Web Interfaces',
-    summary: 'Exploring how generative models are reshaping user interaction patterns and dynamic UI.',
-    date: 'Oct 12, 2024',
-    image: 'https://picsum.photos/seed/blog1/600/400'
+    title: 'How AI Recommendation Systems Actually Work',
+    summary:
+      'A simple explanation of how AI recommends content using matrix multiplication and linear algebra concepts.',
+    date: 'Nov 10, 2024',
+    image: '/images/articles/thambnail.jpg',
+    url: 'https://www.linkedin.com/pulse/how-ai-recommendation-systems-actually-work-explained-arman-ashraf-a6nyf/'
   },
   {
     id: 'b2',
-    title: 'Scaling React Apps for 1M Users',
-    summary: 'Practical strategies for caching, code splitting, and managing complex global state at scale.',
-    date: 'Sep 28, 2024',
-    image: 'https://picsum.photos/seed/blog2/600/400'
+    title: 'How AI Separates Mixed Signals',
+    summary:
+      'Understanding how linear algebra helps AI separate mixed audio signals into original sources.',
+    date: 'Nov 18, 2024',
+    image: '/images/articles/flowchat.jpg',
+    url: 'https://www.linkedin.com/pulse/how-ai-separates-mixed-signals-explained-simple-linear-arman-ashraf-fo1if/'
   }
 ];
 export const EDUCATION: Education[] = [
+  // {
+  //   id: 'e1',
+  //   degree: 'B.S. in Mathematics',
+  //   institution: 'University of Gujrat',
+  //   period: '2018 – 2022',
+  //   description:
+  //     'Focused on advanced algorithms, discrete structures, and linear algebra. Built strong problem-solving and math-driven programming skills. Graduated with a GPA of 3.74/4.0.'
+  // },
+
   {
     id: 'e1',
-    degree: 'B.S. in Mathematics',
+    degree: 'B.S. in Information Technology',
     institution: 'University of Gujrat',
     period: '2018 – 2022',
     description:
-      'Focused on advanced algorithms, discrete structures, and linear algebra. Built strong problem-solving and math-driven programming skills. Graduated with a GPA of 3.74/4.0.'
+      'Focused on software development, algorithms, databases, and computer systems. Built strong foundations in programming, problem-solving, and full-stack application development using modern technologies.'
   },
   {
     id: 'e2',

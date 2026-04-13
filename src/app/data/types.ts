@@ -41,6 +41,7 @@ export interface Project {
     summary: string;
     date: string;
     image: string;
+    url: string;
   }
   
   export interface Education {
