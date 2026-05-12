@@ -159,6 +159,16 @@ export const PROJECTS: Project[] = [
     githubUrl: 'https://github.com/arman229',
     category: 'AI'
   }, {
+    id: '3',
+    title: 'ArmanStore — AI E-Commerce Platform',
+    description: 'AI-powered e-commerce platform with chatbot, RAG search, and visual product matching.',
+    image: '/images/projects/newshoesstore.jpg',
+    tags: ['E-Commerce', 'AI', 'RAG'],
+    techStack: ['Python', 'FastAPI', 'Next.js', 'Docker', 'Pinecone', 'CLIP'],
+    liveUrl: 'https://armanstore.vercel.app/',
+    githubUrl: 'https://github.com/arman229',
+    category: 'AI'
+  }, {
     id: '2',
     title: 'StyleMatch — AI Hairstyle Checker',
     description: 'Enables users to virtually preview hairstyles and see how they would look after a haircut using AI.',
@@ -169,17 +179,7 @@ export const PROJECTS: Project[] = [
     githubUrl: 'https://github.com/arman229',
     category: 'AI'
   },
-  {
-    id: '3',
-    title: 'ArmanStore — AI E-Commerce Platform',
-    description: 'AI-powered e-commerce platform with chatbot, RAG search, and visual product matching.',
-    image: '/images/projects/armanstore.png',
-    tags: ['E-Commerce', 'AI', 'RAG'],
-    techStack: ['Python', 'FastAPI', 'Next.js', 'Docker', 'Pinecone', 'CLIP'],
-    liveUrl: 'https://armanstore.vercel.app/',
-    githubUrl: 'https://github.com/arman229',
-    category: 'AI'
-  },
+
 
   {
     id: '4',
@@ -341,7 +341,7 @@ export const BLOG_POSTS: BlogPost[] = [
   }
 ];
 export const EDUCATION: Education[] = [
- 
+
 
   {
     id: 'e1',
