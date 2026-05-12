@@ -326,7 +326,7 @@ export const BLOG_POSTS: BlogPost[] = [
     title: 'How AI Recommendation Systems Actually Work',
     summary:
       'A simple explanation of how AI recommends content using matrix multiplication and linear algebra concepts.',
-    date: 'Nov 10, 2024',
+    date: 'Mar 12, 2026',
     image: '/images/articles/thambnail.jpg',
     url: 'https://www.linkedin.com/pulse/how-ai-recommendation-systems-actually-work-explained-arman-ashraf-a6nyf/'
   },
@@ -335,26 +335,19 @@ export const BLOG_POSTS: BlogPost[] = [
     title: 'How AI Separates Mixed Signals',
     summary:
       'Understanding how linear algebra helps AI separate mixed audio signals into original sources.',
-    date: 'Nov 18, 2024',
+    date: 'Mar 15, 2026',
     image: '/images/articles/flowchat.jpg',
     url: 'https://www.linkedin.com/pulse/how-ai-separates-mixed-signals-explained-simple-linear-arman-ashraf-fo1if/'
   }
 ];
 export const EDUCATION: Education[] = [
-  // {
-  //   id: 'e1',
-  //   degree: 'B.S. in Mathematics',
-  //   institution: 'University of Gujrat',
-  //   period: '2018 – 2022',
-  //   description:
-  //     'Focused on advanced algorithms, discrete structures, and linear algebra. Built strong problem-solving and math-driven programming skills. Graduated with a GPA of 3.74/4.0.'
-  // },
+ 
 
   {
     id: 'e1',
     degree: 'B.S. in Information Technology',
     institution: 'University of Gujrat',
-    period: '2018 – 2022',
+    period: '2018 – 2023',
     description:
       'Focused on software development, algorithms, databases, and computer systems. Built strong foundations in programming, problem-solving, and full-stack application development using modern technologies.'
   },

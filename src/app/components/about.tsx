@@ -30,7 +30,7 @@ function AboutSection() {
           .typeString("Visual & Textual RAG expert.")
           .pauseFor(800)
           .deleteAll()
-          .typeString("Production-ready AI web apps.")
+          .typeString("Python Developer")
           .pauseFor(1000)
           .deleteAll()
           .start();
@@ -48,7 +48,7 @@ function AboutSection() {
       <div className="w-full flex flex-col lg:flex-row items-center justify-around gap-16">
         {/* ================= TEXT CONTENT ================= */}
         <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
-          <div className="inline-block px-4 py-1.5 mb-6 bg-slate-800/50 border border-slate-700 rounded-full text-xs font-bold tracking-widest text-indigo-400 uppercase">
+          <div className="inline-block px-4 md:mt-10 py-1.5 mb-6 bg-slate-800/50 border border-slate-700 rounded-full text-xs font-bold tracking-widest text-indigo-400 uppercase">
             Available for New Opportunities
           </div>
 
@@ -123,7 +123,7 @@ function AboutSection() {
           <div className="mt-12 flex items-center gap-8 opacity-70">
             <Stat number="2+" label="Years Exp." />
             <Divider />
-            <Stat number="10+" label="Projects" />
+            <Stat number="5+" label="Projects" />
             <Divider />
             <Stat number="12+" label="Courses" />
           </div>
